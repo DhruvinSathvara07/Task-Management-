@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="offcanvas offcanvas-start slidebar-nav" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <!-- Optional Header Content -->
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <div>
+                        <li class="text-center"><a href="index.html">Create User</a></li>
+                    </div>
+                    <div class="mt-4">
+                        <li class="text-center"><a href="userList.html">UserList</a></li>
+                    </div>
+                    <div class="mt-4">
+                        <li class="text-center"><a href="createTask.html">Create Task</a></li>
+                    </div>
+                    <div class="mt-4">
+                        <li class="text-center"><a href="taskList.html">TaskList</a></li>
+                    </div>
+                    <div class="mt-4">
+                        <li class="text-center"><a href="history.html">History</a></li>
+                    </div>
+                </ul>
+            </div>
+            <!-- <div class="offcanvas-footer text-center p-3">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+            </div> -->
+        </div>
+
+    </div>
+    <!-- <div class="w-100 text-end me-5 pe-5">
+            <button class="navbar-toggler bg-secondary border" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" data-bs-target="#navbarSupportedContent" aria-controls="offcanvasExample"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div> -->
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample">
+    Open Offcanvas
+</button> -->
+
+    <div class="card mt-5 ms-5">
+        <div class="card-header">
+            <h1 class="text-center">Create User</h1>
+        </div>
+        <div class="card-body">
+            <form class="form">
+                <label for="userId" class="form-label">User Id</label>
+                <input type="number" class="form-control" id="userId" aria-describedby="emailHelp">
+                <label for="userName" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="userName" aria-describedby="emailHelp">
+                <button class="btn btn-primary mt-3 submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- JS File -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

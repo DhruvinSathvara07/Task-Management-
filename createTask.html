@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="offcanvas offcanvas-start slidebar-nav" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <div>
+                        <li class="text-center"><a href="index.html">Create User</a></li>
+                    </div>
+                    <div class="mt-4">
+                        <li class="text-center"><a href="userList.html">UserList</a></li>
+                    </div>
+                    <div class="mt-4">
+                        <li class="text-center"><a href="createTask.html">Create Task</a></li>
+                    </div>
+                    <div class="mt-4">
+                        <li class="text-center"><a href="taskList.html">TaskList</a></li>
+                    </div>
+                    <div class="mt-4">
+                        <li class="text-center"><a href="history.html">History</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-5 ms-5">
+        <div class="card-header">
+            <h1 class="text-center">Create Tasks</h1>
+        </div>
+        <div class="card-body" id="createTask">
+            <form id="createTaskForm">
+                <label for="taskName" class="form-label">Task Name</label>
+                <input type="text" class="form-control taskName" aria-describedby="emailHelp">
+                <label for="TaskDescription" class="form-label">Task Description</label>
+                <input type="text" class="form-control taskDescription" aria-describedby="emailHelp">
+                <label for="TaskStatus" class="form-label">Task Status</label>
+                <select class="form-control TaskStatus">
+                    <option value="pending">pending</option>
+                    <option value="inprogress">InProgress</option>
+                    <option value="complete">complete</option>
+                </select>
+                <label for="User" class="form-label">User</label>
+                <select class="form-control selectUsers">
+
+                </select>
+                <button class="btn btn-primary mt-3 createTask" type="submit">Create Task</button>
+            </form>
+        </div>
+    </div>
+    <!-- JS File -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/createTask.js"></script>
+    <script src="assets/js/taskList.js"></script>
+</body>
+
+</html>

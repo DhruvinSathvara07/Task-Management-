@@ -1,0 +1,39 @@
+.slidebar-nav {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.848);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #fff !important;
+    text-decoration: none;
+
+}
+
+.card {
+    width: 500px;
+    position: relative;
+    left: 20%;
+}
+
+/* 
+.offcanvas {
+    box-shadow: none !important;
+} */
+
+/* @media (min-width:576px) {
+    .slidebar-nav {
+        transform: none;
+        visibility: visible !important;
+    }
+} */
+
+@media (min-width:992px) {
+    .slidebar-nav {
+        transform: none;
+        visibility: visible !important;
+    }
+}
